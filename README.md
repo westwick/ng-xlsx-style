@@ -1,5 +1,9 @@
 # ng-xlsx-style
 
-forked from https://github.com/protobi/js-xlsx/ - refer to original documentation there
+Forked from https://github.com/protobi/js-xlsx/ - refer to original documentation there.
+This project only aims to support generation in browser, not in a node env.
 
-currently only one change: fixes the require statement with cptable to allow this to work in angular projects
+## Changes
+
+* remove require statement for cptable to allow this to work in angular projects (and others I suppose)
+* remove require statements for `fs` (only needed for node, not browser)
