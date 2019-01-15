@@ -1342,7 +1342,7 @@ if(typeof JSZip !== 'undefined') jszip = JSZip;
 if (typeof exports !== 'undefined') {
 	if (typeof module !== 'undefined' && module.exports) {
 		if(has_buf && typeof jszip === 'undefined') jszip = require('js'+'zip');
-		if(typeof jszip === 'undefined') jszip = require('./js'+'zip').JSZip;
+		if(typeof jszip === 'undefined') jszip = require('./jszip.js');
 		_fs = _fs;
 	}
 }
@@ -1776,7 +1776,7 @@ var make_offcrypto = function(O, _crypto) {
 	var crypto;
 	if(typeof _crypto !== 'undefined') crypto = _crypto;
 	else if(typeof require !== 'undefined') {
-		try { crypto = require('cry'+'pto'); }
+		try { crypto = crypto; }
 		catch(e) { crypto = null; }
 	}
 
